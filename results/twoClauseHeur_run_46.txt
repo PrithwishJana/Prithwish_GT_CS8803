@@ -1,0 +1,160 @@
+
+-------------
+N=100; L=300; run=46; result=SAT;
+N=100; L=300; run=46; Execution Time (sec)=0.009142398834228516;
+N=100; L=300; run=46; No. of DPLL calls=46;
+
+-------------
+N=100; L=320; run=46; result=SAT;
+N=100; L=320; run=46; Execution Time (sec)=0.007680416107177734;
+N=100; L=320; run=46; No. of DPLL calls=48;
+
+-------------
+N=100; L=340; run=46; result=SAT;
+N=100; L=340; run=46; Execution Time (sec)=0.035576820373535156;
+N=100; L=340; run=46; No. of DPLL calls=52;
+
+-------------
+N=100; L=360; run=46; result=SAT;
+N=100; L=360; run=46; Execution Time (sec)=0.008438348770141602;
+N=100; L=360; run=46; No. of DPLL calls=39;
+
+-------------
+N=100; L=380; run=46; result=SAT;
+N=100; L=380; run=46; Execution Time (sec)=0.19607114791870117;
+N=100; L=380; run=46; No. of DPLL calls=242;
+
+-------------
+N=100; L=400; run=46; result=SAT;
+N=100; L=400; run=46; Execution Time (sec)=0.1898953914642334;
+N=100; L=400; run=46; No. of DPLL calls=211;
+
+-------------
+N=100; L=420; run=46; result=UNSAT;
+N=100; L=420; run=46; Execution Time (sec)=2.1420464515686035;
+N=100; L=420; run=46; No. of DPLL calls=1795;
+
+-------------
+N=100; L=440; run=46; result=UNSAT;
+N=100; L=440; run=46; Execution Time (sec)=2.392094850540161;
+N=100; L=440; run=46; No. of DPLL calls=1937;
+
+-------------
+N=100; L=460; run=46; result=UNSAT;
+N=100; L=460; run=46; Execution Time (sec)=1.9274911880493164;
+N=100; L=460; run=46; No. of DPLL calls=1361;
+
+-------------
+N=100; L=480; run=46; result=UNSAT;
+N=100; L=480; run=46; Execution Time (sec)=1.6033687591552734;
+N=100; L=480; run=46; No. of DPLL calls=1071;
+
+-------------
+N=100; L=500; run=46; result=UNSAT;
+N=100; L=500; run=46; Execution Time (sec)=0.9367704391479492;
+N=100; L=500; run=46; No. of DPLL calls=581;
+
+-------------
+N=100; L=520; run=46; result=UNSAT;
+N=100; L=520; run=46; Execution Time (sec)=1.1113133430480957;
+N=100; L=520; run=46; No. of DPLL calls=615;
+
+-------------
+N=100; L=540; run=46; result=UNSAT;
+N=100; L=540; run=46; Execution Time (sec)=0.6603763103485107;
+N=100; L=540; run=46; No. of DPLL calls=343;
+
+-------------
+N=100; L=560; run=46; result=UNSAT;
+N=100; L=560; run=46; Execution Time (sec)=0.6211254596710205;
+N=100; L=560; run=46; No. of DPLL calls=333;
+
+-------------
+N=100; L=580; run=46; result=UNSAT;
+N=100; L=580; run=46; Execution Time (sec)=0.5941343307495117;
+N=100; L=580; run=46; No. of DPLL calls=337;
+
+-------------
+N=100; L=600; run=46; result=UNSAT;
+N=100; L=600; run=46; Execution Time (sec)=0.5405280590057373;
+N=100; L=600; run=46; No. of DPLL calls=267;
+
+-------------
+N=150; L=450; run=46; result=SAT;
+N=150; L=450; run=46; Execution Time (sec)=0.016558170318603516;
+N=150; L=450; run=46; No. of DPLL calls=70;
+
+-------------
+N=150; L=480; run=46; result=SAT;
+N=150; L=480; run=46; Execution Time (sec)=0.015977859497070312;
+N=150; L=480; run=46; No. of DPLL calls=41;
+
+-------------
+N=150; L=510; run=46; result=SAT;
+N=150; L=510; run=46; Execution Time (sec)=0.016452312469482422;
+N=150; L=510; run=46; No. of DPLL calls=58;
+
+-------------
+N=150; L=540; run=46; result=SAT;
+N=150; L=540; run=46; Execution Time (sec)=0.17436695098876953;
+N=150; L=540; run=46; No. of DPLL calls=142;
+
+-------------
+N=150; L=570; run=46; result=SAT;
+N=150; L=570; run=46; Execution Time (sec)=0.36724400520324707;
+N=150; L=570; run=46; No. of DPLL calls=274;
+
+-------------
+N=150; L=600; run=46; result=SAT;
+N=150; L=600; run=46; Execution Time (sec)=17.518858432769775;
+N=150; L=600; run=46; No. of DPLL calls=8933;
+
+-------------
+N=150; L=630; run=46; result=UNSAT;
+N=150; L=630; run=46; Execution Time (sec)=45.64400935173035;
+N=150; L=630; run=46; No. of DPLL calls=20479;
+
+-------------
+N=150; L=660; run=46; result=UNSAT;
+N=150; L=660; run=46; Execution Time (sec)=16.462712049484253;
+N=150; L=660; run=46; No. of DPLL calls=6865;
+
+-------------
+N=150; L=690; run=46; result=UNSAT;
+N=150; L=690; run=46; Execution Time (sec)=24.88222646713257;
+N=150; L=690; run=46; No. of DPLL calls=10423;
+
+-------------
+N=150; L=720; run=46; result=UNSAT;
+N=150; L=720; run=46; Execution Time (sec)=16.387972116470337;
+N=150; L=720; run=46; No. of DPLL calls=5735;
+
+-------------
+N=150; L=750; run=46; result=UNSAT;
+N=150; L=750; run=46; Execution Time (sec)=17.554363489151;
+N=150; L=750; run=46; No. of DPLL calls=5907;
+
+-------------
+N=150; L=780; run=46; result=UNSAT;
+N=150; L=780; run=46; Execution Time (sec)=10.632993936538696;
+N=150; L=780; run=46; No. of DPLL calls=3419;
+
+-------------
+N=150; L=810; run=46; result=UNSAT;
+N=150; L=810; run=46; Execution Time (sec)=9.339295387268066;
+N=150; L=810; run=46; No. of DPLL calls=2999;
+
+-------------
+N=150; L=840; run=46; result=UNSAT;
+N=150; L=840; run=46; Execution Time (sec)=8.738086700439453;
+N=150; L=840; run=46; No. of DPLL calls=2579;
+
+-------------
+N=150; L=870; run=46; result=UNSAT;
+N=150; L=870; run=46; Execution Time (sec)=6.453459024429321;
+N=150; L=870; run=46; No. of DPLL calls=1761;
+
+-------------
+N=150; L=900; run=46; result=UNSAT;
+N=150; L=900; run=46; Execution Time (sec)=5.3344855308532715;
+N=150; L=900; run=46; No. of DPLL calls=1439;

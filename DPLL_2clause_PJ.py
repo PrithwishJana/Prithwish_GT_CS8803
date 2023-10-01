@@ -6,10 +6,11 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--N', type=int, required=True)
 parser.add_argument('--L', type=int, required=True)
+parser.add_argument('--run', type=int, required=True)
 
 args = parser.parse_args()
 
-#random.seed(111)
+random.seed(111)
 numCalls = 0
 
 def parseCNFfile(cnfFilePath):
@@ -53,6 +54,12 @@ def twoClauseCounter(formula):
                     counter[literal] = 1
     return counter
 
+def getLiteralList(formula):
+    litList = []
+    for clause in formula:
+        litList.extend(clause)
+    return list(set(litList))
+
 def unitProp(formula):
     varAssn = []
     unitClauseList = []
@@ -93,6 +100,8 @@ def backtracking(formula, assignment):
 def twoClauseHeur(formula):
     cntr = twoClauseCounter(formula)
     valList = [cntr[k] for k in cntr]
+    if len(valList) == 0:
+        return randomHeur(formula)
     maxVal = max(valList)
     litList = []
     for k in cntr:
@@ -100,12 +109,17 @@ def twoClauseHeur(formula):
             litList.append(k)
     return random.choice(litList)
 
+def randomHeur(formula):
+    litList = getLiteralList(formula)
+    return random.choice(litList)
+
 def main():
     #print ("-------------")
     #print ("SAT Solver using 2-Clause Heuristic")
     print ("\n-------------")
     numVars, clauses = parseCNFfile(os.path.join("./cnf_n" + str(args.N), 
-                            "cnf_n" + str(args.N) + "l" + str(args.L) + ".txt"))
+                            "cnf_n" + str(args.N) + "_l" + str(args.L) +\
+                            "_run" + str(args.run) + ".txt"))
     st = time.time()
     solution = backtracking(clauses, [])
     et = time.time()
@@ -114,13 +128,13 @@ def main():
             if (i not in solution) and (-i not in solution):
                 solution += [i]
         solution = sorted(solution, key = abs)
-        print (f"N={args.N}; L={args.L}; result=SAT;")
+        print (f"N={args.N}; L={args.L}; run={args.run}; result=SAT;")
         #print ("v", " ".join([str(x) for x in solution]),  "0")
     else:
-        print (f"N={args.N}; L={args.L}; result=UNSAT;")
+        print (f"N={args.N}; L={args.L}; run={args.run}; result=UNSAT;")
 
-    print(f"N={args.N}; L={args.L}; Execution Time (sec)={et - st};")
-    print(f"N={args.N}; L={args.L}; No. of DPLL calls={numCalls};")
+    print(f"N={args.N}; L={args.L}; run={args.run}; Execution Time (sec)={et - st};")
+    print(f"N={args.N}; L={args.L}; run={args.run}; No. of DPLL calls={numCalls};")
 
 if __name__ == '__main__':
     main()

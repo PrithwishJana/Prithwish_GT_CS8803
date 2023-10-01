@@ -38,18 +38,18 @@ def sampleDIMACS(N, L, K=3):
 NList = [100, 150]
 
 for N in NList:
-
 	folderPath = "./cnf_n" + str(N)
 	if os.path.exists(folderPath):
 		shutil.rmtree(folderPath)
 	os.makedirs(folderPath)
+	for run in range(1, 101):
 
-	L_list = list(range(3 * N, 6 * N + 1, int(math.floor(0.2 * N))))
-	for LIndx, L in enumerate(L_list):
-		f = open(folderPath + "/cnf_n" + str(N) + "l" + str(L) + ".txt", "a")
-		print (N, L)
-		cnfInst = sampleDIMACS(N, L)
-		f.write(cnfInst)
-	f.close()
-	print ("")
+		L_list = list(range(3 * N, 6 * N + 1, int(math.floor(0.2 * N))))
+		for LIndx, L in enumerate(L_list):
+			f = open(folderPath + "/cnf_n" + str(N) + "_l" + str(L) + "_run" + str(run) + ".txt", "a")
+			print (N, run, L)
+			cnfInst = sampleDIMACS(N, L)
+			f.write(cnfInst)
+			f.close()
+		print ("")
 
